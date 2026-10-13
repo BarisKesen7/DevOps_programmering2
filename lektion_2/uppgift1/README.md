@@ -8,8 +8,8 @@ Följ dessa steg för att köra projektet lokalt på din dator:
 
 ## 1. Klona repositoryt
 ```bash
-git clone <din-repo-länk-här>
-cd <mapp-namn>
+git clone <https://github.com/BarisKesen7/DevOps_programmering2.git>
+cd <DevOps_programmering2/lektion_2/uppgift1>
 ```
 ## 2. Skapa en virtuell miljö (venv)
 Skapa en virtuell miljö i mappen:
