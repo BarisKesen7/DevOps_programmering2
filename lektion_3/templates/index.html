@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mt-4">
+    <h2>
+        TABELL
+    </h2>
+    {{tabell | safe}}
+</div>
+
+<div class="mt-5">
+    <h2>
+        DIAGRAM
+    </h2>
+    {{diagram | safe}}
+</div>
+{% endblock %}
