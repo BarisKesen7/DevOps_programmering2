@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mt=4">
+    <h1 class="text-center" style="color: rgb(245, 107, 130);">
+        CHESS GLOBAL TOPPLISTA 
+    </h1>
+
+    <table class="table table-hover table-bordered mt-4" style="font-style: italic;">
+        <thead class="table-dark">
+            <tr>
+                <th>PLATS</th>
+                <th>TITEL</th>
+                <th>SPELARE</th>
+                <th>RATING(POÄNG)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for person in spelare %}
+
+            <tr>
+                <td><strong>{{loop.index}}</strong></td>
+                <td>{{person.title}}</td>
+                <td>{{person.username}}</td>
+                <td class="text-sucess fw-bold">{{person.perfs.blitz.rating}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
